@@ -139,7 +139,12 @@ export default function SlowChurn() {
             <div className="relative z-[1] px-6 md:max-w-[40%] md:p-14">
               <p className="eyebrow">{slow.eyebrow}</p>
               <Heading lines={slow.heading} className="mt-4 text-[clamp(42px,5.6vw,100px)] md:mt-5" />
-              <p className="mt-5 hidden max-w-[360px] text-[17px] leading-relaxed text-fg/80 md:block">{slow.text}</p>
+              <div className="mt-6 hidden md:block">
+                <a href="/about" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-[14px] font-extrabold text-accent shadow-xs transition-transform hover:scale-105 active:scale-95">
+                  <span>Our full story</span>
+                  <span aria-hidden>→</span>
+                </a>
+              </div>
             </div>
 
             <div className="relative z-[1] mt-5 flex gap-2 px-5 md:static md:mt-0 md:px-0">

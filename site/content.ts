@@ -21,7 +21,7 @@ export const nav = {
   links: [
     { label: "Home", href: "/" },
     { label: "Flavours", href: "/flavours" },
-    { label: "About Us", href: "/#about" },
+    { label: "About Us", href: "/about" },
     { label: "Parlours", href: "/#parlours" },
     { label: "Contact Us", href: "/#contact" },
   ],
@@ -94,7 +94,7 @@ export const builder = {
 export const slow = {
   eyebrow: "How it's made",
   heading: ["Made the", "*slow* way"],
-  text: "No premix, no powder. Milk comes in at 6 AM and the first batch is on the counter by noon.",
+  text: "",
   frames: "/frames/melt-pour",
   alt: "Warm chocolate poured over a vanilla scoop, topped with pistachios",
   panel: "linear-gradient(180deg, #e2c4c6, #ebd7dd)", // the video's own background, so the panel and the video blend
@@ -272,3 +272,101 @@ export const categories: Category[] = [
     ],
   },
 ];
+
+export const aboutPage = {
+  eyebrow: "Our Story & Philosophy",
+  heading: ["Crafted with *care.*", "Flavoured with emotions."],
+  subtitle:
+    "We believe ice cream should never be rushed, mass-produced, or compromised with artificial powders. Born from a love for pure, unadulterated malai and honest craft, Cream Crust churns small batches daily with fresh farm milk and real seasonal fruits.",
+  stats: [
+    { value: "100%", label: "Pure Dairy Fat", note: "No palm oil, no vegetable ghee" },
+    { value: "20L", label: "Max Per Batch", note: "Small batches for intense flavor" },
+    { value: "40 min", label: "Slow Churn Cycle", note: "Dense, velvety micro-texture" },
+    { value: "0", label: "Artificial Colors", note: "Only natural fruits & spices" },
+  ],
+  pillars: [
+    {
+      title: "Single-Source Farm Milk",
+      desc: "Every batch begins at 6:00 AM with fresh milk sourced directly from trusted local farmers in Anand, Gujarat. Never re-constituted milk powder or UHT concentrates.",
+      tag: "Pure Dairy",
+      icon: "milk",
+      fill: "#ecd8f8",
+    },
+    {
+      title: "The Artisanal Slow Churn",
+      desc: "Mass-market ice cream is pumped with up to 50% air (overrun). We churn slowly for 40 minutes with minimum overrun, creating an ultra-dense, melt-in-mouth richness.",
+      tag: "Slow Craft",
+      icon: "churn",
+      fill: "#ffedd5",
+    },
+    {
+      title: "Real Seasonal Harvests",
+      desc: "Ratnagiri Alphonsos picked at peak ripeness, Iranian pistachios roasted fresh in our parlour kitchens, hand-pulled filter coffee decoction, and single-origin Belgian cocoa.",
+      tag: "Pure Ingredients",
+      icon: "harvest",
+      fill: "#dcfce7",
+    },
+    {
+      title: "Flavoured with Emotions",
+      desc: "Every recipe is rooted in a feeling: the excitement of the Sunday family tub, the comfort of warm brownie on a date night, and the timeless nostalgia of summer kulfi on a stick.",
+      tag: "The Soul",
+      icon: "heart",
+      fill: "#ede9fe",
+    },
+  ],
+  process: {
+    eyebrow: "The Daily Rhythm",
+    heading: ["How each scoop *comes* to life"],
+    text: "From morning farm collection to the final swirl in your waffle cone — take a look inside our daily artisanal process.",
+    steps: [
+      {
+        time: "06:00 AM",
+        title: "Fresh Milk Arrives",
+        desc: "Raw, rich milk arrives fresh from the morning milking. It is gently pasteurized and skimmed for that golden cream cap.",
+        badge: "Farm Direct",
+      },
+      {
+        time: "08:30 AM",
+        title: "Slow Simmer & Infusions",
+        desc: "Whole spices, roasted nuts, and hand-cut fruits are slowly steeped into the cream base to draw out deep, natural aromatics.",
+        badge: "Real Flavour",
+      },
+      {
+        time: "11:00 AM",
+        title: "40-Minute Churn",
+        desc: "In our Italian batch freezers, the mix is slowly churned at sub-zero temperatures, forming fine, silky ice crystals.",
+        badge: "Small Batch",
+      },
+      {
+        time: "01:00 PM",
+        title: "Fresh onto the Counter",
+        desc: "Freshly churned tubs are chilled to perfect scooping temperature, ready for our guests before the afternoon heat peaks.",
+        badge: "Fresh Daily",
+      },
+    ],
+  },
+  promises: [
+    {
+      title: "Pure Malai, 0% Palm Oil",
+      desc: "We stand strictly against synthetic vegetable fat (frozen dessert blends). We only serve authentic, 100% pure ice cream made with cow and buffalo malai.",
+    },
+    {
+      title: "Fresh Baked Cones Hourly",
+      desc: "Our waffle cones aren't shipped in cardboard boxes. They are pressed and hand-rolled fresh right in front of you every single hour.",
+    },
+    {
+      title: "Honest Sweetness",
+      desc: "We calibrate sugar levels lower than standard ice creams so that the genuine taste of slow-cooked milk, Alphonso mango, and roasted nuts shines through.",
+    },
+    {
+      title: "No Leftovers, Ever",
+      desc: "Because our batches are small (maximum 20 liters), what is made today is finished today. Tomorrow morning starts completely fresh.",
+    },
+  ],
+  quote: {
+    text: "We didn't set out to make the most ice cream. We set out to make ice cream that makes you pause, smile, and remember why life is sweet.",
+    author: "Safvan Vohra & Saad Vohra",
+    role: "Founders & Master Churners",
+  },
+};
+
