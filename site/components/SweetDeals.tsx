@@ -8,7 +8,7 @@ function Badge({ text, className = "" }: { text: string; className?: string }) {
   const ring = `${text} • ${text} • `.toUpperCase();
   const id = `badge-${text.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
   return (
-    <span className={`absolute z-[2] grid h-[104px] w-[104px] place-items-center rounded-full bg-accent text-white shadow-[0_10px_20px_-10px_rgba(163,19,74,.8)] md:h-[108px] md:w-[108px] ${className}`}>
+    <span className={`absolute z-[2] grid h-[104px] w-[104px] place-items-center rounded-full bg-accent text-white shadow-[0_10px_20px_-10px_rgba(82,24,138,.65)] md:h-[108px] md:w-[108px] ${className}`}>
       <svg viewBox="0 0 100 100" className="spin-slow absolute inset-0 h-full w-full" aria-hidden>
         <path id={id} d="M50 50m-36 0a36 36 0 1 1 72 0a36 36 0 1 1-72 0" fill="none" />
         <text fontSize="12" fontWeight="800" letterSpacing="0.8" fill="currentColor">

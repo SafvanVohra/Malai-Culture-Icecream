@@ -130,7 +130,7 @@ export default function ScoopLoader({ name, cone, scoop }: { name: string; cone:
 
   return (
     <div ref={root} data-loader aria-hidden className="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-6 overflow-hidden bg-[var(--strawberry)]">
-      <div className="blob absolute h-[70vmin] w-[70vmin] bg-[#ffd6e2]" />
+      <div className="blob absolute h-[70vmin] w-[70vmin] bg-[#f0dcfe]" />
       <div className="relative flex flex-col items-center">
         <img ref={scoopEl} src={scoop} alt="" className="relative z-[2] -mb-[7vh] w-[16vh] origin-bottom" style={{ transform: "translateY(-420%)" }} />
         <img ref={coneEl} src={cone} alt="" className="relative z-[1] h-[22vh] w-auto" />

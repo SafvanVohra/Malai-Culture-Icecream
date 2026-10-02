@@ -44,7 +44,7 @@ export default function MeltFooter() {
     <footer
       ref={root}
       id="contact"
-      className="relative z-[1] overflow-hidden bg-accent pt-[clamp(120px,12vw,190px)] text-[#fff1f4]"
+      className="relative z-[1] overflow-hidden bg-accent pt-[clamp(120px,12vw,190px)] text-[var(--bg)]"
       data-record-label="Footer"
       data-record-time="1.5"
       data-record-hold="2"
@@ -96,7 +96,7 @@ export default function MeltFooter() {
                   {drip && (
                     <span
                       data-len={`${drip[2]}em`}
-                      className="word-drip absolute top-[80%] w-[0.1em] -translate-x-1/2 rounded-b-full bg-[#fff1f4] after:absolute after:bottom-[-0.03em] after:left-1/2 after:h-[0.15em] after:w-[0.15em] after:-translate-x-1/2 after:rounded-full after:bg-[#fff1f4] after:content-['']"
+                      className="word-drip absolute top-[80%] w-[0.1em] -translate-x-1/2 rounded-b-full bg-[var(--bg)] after:absolute after:bottom-[-0.03em] after:left-1/2 after:h-[0.15em] after:w-[0.15em] after:-translate-x-1/2 after:rounded-full after:bg-[var(--bg)] after:content-['']"
                       style={{ left: `${drip[1]}%`, height: `${drip[2]}em` }}
                     />
                   )}
@@ -109,7 +109,7 @@ export default function MeltFooter() {
 
       <div className="container-x flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-t border-white/25 py-4 text-[12px] font-semibold md:py-5 md:text-[13px]">
         <p className="flex items-center gap-2">
-          <ScoopMark className="h-4 w-auto text-white" />© 2026 Malai Culture
+          <ScoopMark className="h-4 w-auto text-white" />© 2026 Cream Crust
         </p>
         <p className="opacity-90">{footer.note}</p>
       </div>

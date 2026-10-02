@@ -129,10 +129,13 @@ export default function ScoopNav() {
   return (
     <>
       <header ref={ref} className="fixed inset-x-0 top-3 z-50 flex justify-center px-3 md:top-5">
-        <div className="flex w-full max-w-[860px] items-center justify-between gap-2 rounded-full bg-white/95 p-1.5 pl-4 shadow-[0_14px_40px_-16px_rgba(120,20,60,.35)] sm:pl-5 md:w-auto md:justify-start md:gap-4">
-          <a href="/" aria-label="Malai Culture, home" className="font-display flex items-center gap-1.5 text-[20px] whitespace-nowrap text-accent sm:text-[22px] md:text-[24px]">
-            <ScoopMark className="h-[1.05em] w-auto text-[#ff8fb1]" />
-            {nav.logo}
+        <div className="flex w-full max-w-[860px] items-center justify-between gap-2 rounded-full bg-white/95 p-1.5 pl-3 shadow-[0_14px_40px_-16px_rgba(60,10,100,.28)] sm:pl-4 md:w-auto md:justify-start md:gap-4">
+          <a href="/" aria-label="Cream Crust, home" className="flex items-center py-0.5">
+            <img
+              src="/images/melt/cream-crust-transparent.png"
+              alt="Cream Crust Logo"
+              className="h-10 w-auto max-w-[135px] object-contain transition-transform hover:scale-105 sm:h-11 sm:max-w-[155px] md:h-12 md:max-w-[170px]"
+            />
           </a>
           <nav className="relative hidden items-center lg:flex">
             {blob && <span aria-hidden className="absolute top-0 h-full rounded-full bg-[var(--strawberry)] transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)]" style={{ left: blob.x, width: blob.w }} />}
@@ -181,17 +184,19 @@ export default function ScoopNav() {
           {/* Slide-in Side Drawer */}
           <aside
             aria-label="Mobile navigation"
-            className="fixed inset-y-0 right-0 z-[80] flex h-full w-[86vw] max-w-[360px] flex-col justify-between overflow-y-auto bg-[#fff1f4] p-5 shadow-[-14px_0_40px_rgba(43,18,51,0.25)]"
+            className="fixed inset-y-0 right-0 z-[80] flex h-full w-[86vw] max-w-[360px] flex-col justify-between overflow-y-auto bg-[var(--bg)] p-5 shadow-[-14px_0_40px_rgba(34,12,48,0.25)]"
           >
             {/* Drawer Header */}
             <div>
-              <div className="flex items-center justify-between border-b border-[#f4d3dd] pb-4">
+              <div className="flex items-center justify-between border-b border-[var(--line)] pb-4">
                 <div>
-                  <span className="font-display flex items-center gap-1.5 text-[22px] text-accent">
-                    <ScoopMark className="h-5 w-auto text-accent" />
-                    {nav.logo}
-                  </span>
-                  <span className="text-[11px] font-extrabold tracking-wider text-muted uppercase">Hand-churned in Anand</span>
+                  <a href="/" onClick={() => setOpen(false)} aria-label="Cream Crust, home" className="flex items-center">
+                    <img
+                      src="/images/melt/cream-crust-transparent.png"
+                      alt="Cream Crust Logo"
+                      className="h-11 w-auto max-w-[160px] object-contain"
+                    />
+                  </a>
                 </div>
                 <button
                   type="button"

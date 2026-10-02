@@ -69,14 +69,14 @@ export default function MeltHero() {
       <div ref={toppings} aria-hidden>
         {hero.toppings.map((t) => (
           <div key={t.src} data-depth={t.depth} className={`absolute ${t.className}`}>
-            <img src={t.src} alt={t.alt} className="drift w-full drop-shadow-[0_18px_18px_rgba(120,20,60,.18)]" style={{ animationDelay: `${-t.depth * 9}s` }} />
+            <img src={t.src} alt={t.alt} className="drift w-full drop-shadow-[0_18px_18px_rgba(60,10,100,.18)]" style={{ animationDelay: `${-t.depth * 9}s` }} />
           </div>
         ))}
       </div>
 
       {/* the cone */}
       <div ref={cone} className="absolute top-[21%] left-1/2 h-[56%] -translate-x-1/2 md:top-[10%] md:h-[84%]">
-        <img src={hero.cone} alt="A waffle cone with pistachio, strawberry and mango scoops" className="float-soft h-full w-auto drop-shadow-[0_30px_30px_rgba(120,20,60,.22)]" />
+        <img src={hero.cone} alt="A waffle cone with pistachio, strawberry and mango scoops" className="float-soft h-full w-auto drop-shadow-[0_30px_30px_rgba(60,10,100,.22)]" />
       </div>
 
       {/* copy, bottom left */}

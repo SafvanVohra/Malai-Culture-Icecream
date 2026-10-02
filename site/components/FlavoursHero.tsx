@@ -22,7 +22,7 @@ export default function FlavoursHero() {
 
   return (
     <section ref={root} id="top" className="relative overflow-hidden pt-[clamp(130px,15vw,210px)] pb-[clamp(60px,7vw,110px)]">
-      <div aria-hidden className="blob absolute top-[-18%] right-[-10%] h-[60vmin] w-[60vmin] bg-[#ffd6e2]" />
+      <div aria-hidden className="blob absolute top-[-18%] right-[-10%] h-[60vmin] w-[60vmin] bg-[#f0dcfe]" />
       <div aria-hidden className="blob absolute bottom-[-30%] left-[-12%] h-[45vmin] w-[45vmin] bg-[var(--pistachio)] opacity-50" />
       {[
         { t: tops[0], c: "left-[3%] top-[26%] w-[clamp(54px,8vw,130px)] rotate-[-12deg]" },
@@ -31,7 +31,7 @@ export default function FlavoursHero() {
         { t: tops[3], c: "left-[10%] bottom-[12%] w-[clamp(40px,5vw,90px)] rotate-[-20deg]" },
       ].map((x, i) => (
         <span key={i} aria-hidden className={`fh-top drift pointer-events-none absolute ${x.c}`} style={{ animationDelay: `${i * -1.3}s` }}>
-          <img src={x.t.src} alt="" className="w-full drop-shadow-[0_14px_14px_rgba(60,10,30,.2)]" />
+          <img src={x.t.src} alt="" className="w-full drop-shadow-[0_14px_14px_rgba(40,8,60,.2)]" />
         </span>
       ))}
 
@@ -43,7 +43,7 @@ export default function FlavoursHero() {
         <ul className="fh-in mx-auto mt-9 flex max-w-[1000px] flex-wrap justify-center gap-2.5">
           {categories.map((c) => (
             <li key={c.id}>
-              <a href={`#${c.id}`} className="flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-[14px] font-extrabold shadow-[0_5px_0_#f0c3d1] transition-all hover:translate-y-[3px] hover:bg-accent hover:text-white hover:shadow-[0_2px_0_#f0c3d1] md:text-[15px]">
+              <a href={`#${c.id}`} className="flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-[14px] font-extrabold shadow-[0_5px_0_#ddbdf5] transition-all hover:translate-y-[3px] hover:bg-accent hover:text-white hover:shadow-[0_2px_0_#ddbdf5] md:text-[15px]">
                 <span className="h-3 w-3 rounded-full" style={{ background: c.fill }} />
                 {c.name}
                 <span className="tnum text-[12px] font-bold opacity-60">{c.products.length}</span>

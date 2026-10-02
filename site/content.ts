@@ -3,11 +3,11 @@
 
 export const STUDIO = "Triozen Tech";
 
-/** Flavour fills (never used for buttons: the UI accent is always strawberry). */
+/** Flavour fills (never used for buttons: the UI accent is always the royal purple brand color). */
 export const FLAVOUR = {
   pistachio: "#bfe3a6",
   mango: "#ffcf4d",
-  strawberry: "#ffc2d4",
+  strawberry: "#eed5ff",
   coffee: "#ecd3b4",
   cocoa: "#6b3a2a",
   meetha: "#ffe2ad",
@@ -17,7 +17,7 @@ export const FLAVOUR = {
 export type PhotoSlot = { photo?: string; tone: string; hint: string };
 
 export const nav = {
-  logo: "Malai Culture",
+  logo: "Cream Crust",
   links: [
     { label: "Home", href: "/" },
     { label: "Flavours", href: "/flavours" },
@@ -87,7 +87,7 @@ export const builder = {
   cone: "/images/melt/cone-empty.webp",
   coneLine: { name: "Waffle cone", price: "Free" },
   scoops: [byId("pistachio"), byId("mango"), byId("cocoa")],
-  tints: ["#fff1f4", "#e9f5e0", "#fff2c9", "#f6e3d8"], // empty cone, then one per scoop
+  tints: ["#faf5ff", "#e9f5e0", "#fff2c9", "#f6e3d8"], // empty cone, then one per scoop
   cta: "Add to order",
 };
 

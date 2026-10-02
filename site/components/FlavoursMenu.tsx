@@ -17,7 +17,7 @@ function Card({ p, fill }: { p: Category["products"][number]; fill: string }) {
     <article className="capsule group relative flex flex-col pt-[9%] transition-transform duration-500 hover:-translate-y-2" style={{ background: fill, color: INK }} data-cursor="Add">
       {p.image && (
         <div className="relative mx-auto w-[64%]">
-          <img src={p.image} alt={`${p.name}`} width={1000} height={1000} loading="lazy" className="aspect-square w-full object-contain object-bottom drop-shadow-[0_22px_18px_rgba(60,10,30,.2)] transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-hover:-translate-y-2 group-hover:-rotate-6" />
+          <img src={p.image} alt={`${p.name}`} width={1000} height={1000} loading="lazy" className="aspect-square w-full object-contain object-bottom drop-shadow-[0_22px_18px_rgba(40,8,60,.2)] transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-hover:-translate-y-2 group-hover:-rotate-6" />
         </div>
       )}
       <div className="flex flex-1 flex-col px-4 pt-4 pb-4 md:px-7 md:pt-5 md:pb-7">
@@ -99,7 +99,7 @@ export default function FlavoursMenu() {
       {/* sticky category chips */}
       <div className="sticky top-[76px] z-40 md:top-[84px]">
         <div className="container-x">
-          <nav aria-label="Categories" className="no-scrollbar mx-auto flex w-max max-w-full gap-1.5 overflow-x-auto rounded-full bg-white/95 p-1.5 shadow-[0_14px_40px_-16px_rgba(120,20,60,.35)]" data-lenis-prevent>
+          <nav aria-label="Categories" className="no-scrollbar mx-auto flex w-max max-w-full gap-1.5 overflow-x-auto rounded-full bg-white/95 p-1.5 shadow-[0_14px_40px_-16px_rgba(60,10,100,.28)]" data-lenis-prevent>
             {categories.map((c) => (
               <a
                 key={c.id}
