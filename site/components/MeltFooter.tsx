@@ -8,13 +8,13 @@ import { ScoopMark } from "./ScoopNav";
 import { footer } from "../content";
 
 // Which letters of the wordmark drip: [letter index, left %, length em]
+// CREAM (0:C, 1:R, 2:E, 3:A, 4:M) CRUST (5:C, 6:R, 7:U, 8:S, 9:T)
 const DRIPS: [number, number, number][] = [
-  [0, 14, 0.32],
-  [2, 22, 0.5],
-  [3, 50, 0.22],
-  [6, 80, 0.42],
-  [8, 50, 0.28],
-  [10, 50, 0.46],
+  [1, 75, 0.38], // R right leg
+  [2, 50, 0.32], // E center
+  [4, 88, 0.45], // M right stem
+  [7, 50, 0.42], // U curve
+  [9, 50, 0.48], // T stem
 ];
 
 /** WordmarkFooter, restyled: a strawberry footer; the giant MELT THEORY melts (its drips run longer) as you reach the end. */

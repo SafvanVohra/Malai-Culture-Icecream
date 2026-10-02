@@ -31,7 +31,7 @@ export const nav = {
 export const hero = {
   word: "MELT",
   pill: { label: "Flavour of the week", value: "Alphonso Mango" },
-  heading: ["Small batch.", "*Big* feelings."],
+  heading: ["Flavoured", "*With* emotions"],
   text: "Hand-churned in Anand every morning, never more than 20 litres at a time. Real fruit, real milk, no shortcuts.",
   ctas: [
     { label: "Pick your scoop", href: "/flavours" },
@@ -144,7 +144,7 @@ export const notes = {
   items: [
     { name: "Ananya & friends", where: "AV Road", text: "We came for one scoop. We left with a tub each.", rating: 5, tone: FLAVOUR.mango, hint: "Friends with cones", photo: "/images/melt/note-friends.webp", tilt: -4 },
     { name: "Meher, age 7", where: "Amul Dairy Road", text: "Strawberry is the best colour AND the best flavour.", rating: 5, tone: FLAVOUR.strawberry, hint: "Kid with a scoop", photo: "/images/melt/note-kid.webp", tilt: 3 },
-    { name: "Rahul & Sana", where: "Vallabh Vidyanagar", text: "Our Friday date is now a Malai Culture date.", rating: 5, tone: FLAVOUR.coffee, hint: "Couple at night", photo: "/images/melt/note-couple.webp", tilt: -2 },
+    { name: "Rahul & Sana", where: "Vallabh Vidyanagar", text: "Our Friday date is now a Cream Crust date.", rating: 5, tone: FLAVOUR.coffee, hint: "Couple at night", photo: "/images/melt/note-couple.webp", tilt: -2 },
     { name: "The Patels", where: "Amul Dairy Road", text: "Double ka meetha as ice cream. Nani approved.", rating: 5, tone: FLAVOUR.pistachio, hint: "Family on a bench", photo: "/images/melt/note-family.webp", tilt: 4 },
   ],
 };
@@ -162,7 +162,7 @@ export const parlours = {
 };
 
 export const footer = {
-  word: "MALAI CULTURE",
+  word: "CREAM CRUST",
   newsletter: {
     title: "Get the new flavour first",
     text: "One email when a new flavour hits the counter. That's it.",

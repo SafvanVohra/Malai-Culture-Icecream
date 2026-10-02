@@ -8,7 +8,7 @@ import { meta } from "@/site/site";
 
 export const metadata: Metadata = {
   title: `Flavours — ${meta.name}`,
-  description: "Every Malai Culture scoop, sundae, family tub, thick shake, ice-cream cake and kulfi, sorted by category.",
+  description: "Every Cream Crust scoop, sundae, family tub, thick shake, ice-cream cake and kulfi, sorted by category.",
 };
 
 // Same engine as the home page (smooth scroll, animations, cursor). The scoop loader only plays on the home page.
