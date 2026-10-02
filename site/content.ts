@@ -23,7 +23,7 @@ export const nav = {
     { label: "Flavours", href: "/flavours" },
     { label: "About Us", href: "/about" },
     { label: "Parlours", href: "/#parlours" },
-    { label: "Contact Us", href: "/#contact" },
+    { label: "Contact Us", href: "/contact" },
   ],
   cta: { label: "Order", href: "/#build" },
 };
@@ -171,7 +171,7 @@ export const footer = {
   columns: [
     { title: "Eat", links: [{ label: "Flavours", href: "/flavours" }, { label: "Sundaes", href: "/flavours#sundaes" }, { label: "Family tubs", href: "/flavours#tubs" }, { label: "Cakes", href: "/flavours#cakes" }] },
     { title: "Visit", links: [{ label: "Amul Dairy Road", href: "/#parlours" }, { label: "Vallabh Vidyanagar", href: "/#parlours" }, { label: "AV Road", href: "/#parlours" }] },
-    { title: "Hello", links: [{ label: "About Us", href: "/#about" }, { label: "Contact Us", href: "/#contact" }, { label: "Instagram", href: "#" }] },
+    { title: "Hello", links: [{ label: "About Us", href: "/about" }, { label: "Contact Us", href: "/contact" }, { label: "Instagram", href: "https://instagram.com" }] },
   ],
   note: "Powered by Safvan Vohra, Saad Vohra",
 };
@@ -369,4 +369,83 @@ export const aboutPage = {
     role: "Founders & Master Churners",
   },
 };
+
+export const contactPage = {
+  eyebrow: "Get In Touch",
+  heading: ["Say hello or", "*plan an event*"],
+  subtitle:
+    "Whether you want to inquire about custom catering for your wedding, ask about today's fresh churn flavours, or just say hello — we'd love to connect.",
+  channels: [
+    {
+      id: "gmail",
+      title: "Email & Gmail",
+      handle: "creamcrusticecream@gmail.com",
+      action: "mailto:creamcrusticecream@gmail.com",
+      sub: "Drop us an email anytime",
+      badge: "Fast Response",
+      color: "#fce7f3",
+      accent: "#be185d",
+    },
+    {
+      id: "instagram",
+      title: "Instagram",
+      handle: "@creamcrusticecream",
+      action: "https://instagram.com",
+      sub: "Daily scoops, flavours & behind-the-scenes",
+      badge: "Community",
+      color: "#f3e8ff",
+      accent: "#7e22ce",
+    },
+    {
+      id: "facebook",
+      title: "Facebook",
+      handle: "Cream Crust Ice Cream",
+      action: "https://facebook.com",
+      sub: "Community news, photos & events",
+      badge: "Follow Us",
+      color: "#e0e7ff",
+      accent: "#3730a3",
+    },
+    {
+      id: "whatsapp",
+      title: "WhatsApp & Phone",
+      handle: "+91 98765 43210",
+      action: "https://wa.me/919876543210",
+      sub: "Direct chat for orders & catering",
+      badge: "Instant Chat",
+      color: "#dcfce7",
+      accent: "#15803d",
+    },
+  ],
+  locations: [
+    {
+      name: "Amul Dairy Road (Flagship)",
+      address: "Shop 4-5, Heritage Square, Amul Dairy Road, Anand, Gujarat 388001",
+      phone: "+91 2692 245678",
+      hours: "12:00 PM – 12:00 AM Daily",
+      note: "Live Waffle Press & Ice Cream Bar",
+    },
+    {
+      name: "Vallabh Vidyanagar",
+      address: "Near Mota Bazar Circle, Opposite BVM, Vallabh Vidyanagar, Anand 388120",
+      phone: "+91 2692 248900",
+      hours: "12:00 PM – 12:30 AM Daily",
+      note: "Late-Night Student Hangout",
+    },
+    {
+      name: "AV Road",
+      address: "Ground Floor, City Pulse Mall, AV Road, Anand, Gujarat 388001",
+      phone: "+91 2692 241234",
+      hours: "12:00 PM – 12:00 AM Daily",
+      note: "Full Sundae & Cake Counter",
+    },
+  ],
+  catering: {
+    title: "Parties, Weddings & Live Counters",
+    text: "Make your celebration unforgettable with a live Cream Crust parlour setup: waffle cones baked fresh on-site, hand-scooped malai flavours, and sundae toppings for all your guests.",
+    phone: "+91 98765 43210",
+    email: "creamcrusticecream@gmail.com",
+  },
+};
+
 
